@@ -6,7 +6,7 @@
 
 # 1dot1_redirect
 /1.1.1.1/1.1.1.1-for-families/ /1.1.1.1/setup/ 301
-/1.1.1.1/1.1.1.1-for-families/andro#id/ /1.1.1.1/setup/android/ 301
+/1.1.1.1/1.1.1.1-for-families/android/ /1.1.1.1/setup/android/ 301
 /1.1.1.1/1.1.1.1-for-families/router/ /1.1.1.1/setup/router/ 301
 /1.1.1.1/1.1.1.1-for-families/setup-instructions/ /1.1.1.1/setup/ 301
 /1.1.1.1/1.1.1.1-for-families/setup-instructions/dns-over-https/ /1.1.1.1/setup/ 301
