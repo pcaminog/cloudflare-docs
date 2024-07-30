@@ -8,12 +8,12 @@ pcx_content_type: overview
 # Cloudflare Workers KV
 
 {{<description>}}
-Create a global, low-latency, key-value data storage. 
+Create a global, low-latency, key-value data storage.
 {{</description>}}
 
 {{<plan type="workers-all">}}
 
-Workers KV is a data storage that allows you to store and retrieve data globally. With Workers KV, you can build dynamic and performant APIs and websites that support high read volumes with low latency. 
+Workers KV is a data storage that allows you to store and retrieve data globally. With Workers KV, you can build dynamic and performant APIs and websites that support high read volumes with low latency.
 
 ---
 
@@ -47,7 +47,7 @@ Cloudflare R2 Storage allows developers to store large amounts of unstructured d
 
 {{<related header="Durable Objects" href="/durable-objects/" product="durable-objects">}}
 
-Cloudflare Durable Objects allows developers to access scalable compute and permanent, consistent storage. 
+Cloudflare Durable Objects allows developers to access scalable compute and permanent, consistent storage.
 
 {{</related>}}
 
@@ -57,7 +57,7 @@ Built on SQLite, D1 is Cloudflare’s first queryable relational database. Creat
 
 {{</related>}}
 
---- 
+---
 
 ### More resources
 

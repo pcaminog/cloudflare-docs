@@ -10,7 +10,7 @@ meta:
 
 ## 1. Create a new application with C3
 
-C3 (`create-cloudflare-cli`) is a command-line tool designed to help you set up and deploy Workers & Pages applications to Cloudflare as fast as possible. 
+C3 (`create-cloudflare-cli`) is a command-line tool designed to help you set up and deploy Workers & Pages applications to Cloudflare as fast as possible.
 
 To get started, open a terminal window and run:
 

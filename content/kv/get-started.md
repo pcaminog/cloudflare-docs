@@ -233,11 +233,11 @@ export interface Env {
 export default {
 	async fetch(request, env, ctx): Promise<Response> {
     try {
-      await env.YOUR_KV_NAMESPACE.put("KEY", "VALUE");       
-      const value = await env.YOUR_KV_NAMESPACE.get("KEY");       
-      if (value === null) {           
-        return new Response("Value not found", { status: 404 });       
-      }       
+      await env.YOUR_KV_NAMESPACE.put("KEY", "VALUE");
+      const value = await env.YOUR_KV_NAMESPACE.get("KEY");
+      if (value === null) {
+        return new Response("Value not found", { status: 404 });
+      }
       return new Response(value);
     } catch (err) {
       // In a production application, you could instead choose to retry your KV
