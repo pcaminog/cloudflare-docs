@@ -6,7 +6,7 @@
 
 # 1dot1_redirect
 /1.1.1.1/1.1.1.1-for-families/ /1.1.1.1/setup/ 301
-/1.1.1.1/1.1.1.1-for-families/android/ /1.1.1.1/setup/android/ 301
+/1.1.1.1/1.1.1.1-for-families/andro#id/ /1.1.1.1/setup/android/ 301
 /1.1.1.1/1.1.1.1-for-families/router/ /1.1.1.1/setup/router/ 301
 /1.1.1.1/1.1.1.1-for-families/setup-instructions/ /1.1.1.1/setup/ 301
 /1.1.1.1/1.1.1.1-for-families/setup-instructions/dns-over-https/ /1.1.1.1/setup/ 301
@@ -605,6 +605,7 @@
 /images/image-resizing/url-format/ /images/transform-images/ 301
 /images/image-resizing/resize-with-workers/ /images/transform-images/transform-via-workers/ 301
 /images/image-resizing/responsive-images/ /images/manage-images/create-variants/ 301
+
 
 
 # learning-paths
@@ -1439,8 +1440,11 @@
 /kv/platform/kv-commands/ /kv/reference/kv-commands/ 301
 /kv/learning/ /kv/reference/ 301
 /kv/learning/how-kv-works/ /kv/reference/how-kv-works/ 301
-/kv/learning/kv-bindings/ /kv/reference/kv-bindings/ 301
-/kv/learning/kv-namespaces/ /kv/reference/kv-namespaces/ 301
+/kv/learning/kv-bindings/ /kv/concepts/kv-bindings/ 301
+/kv/learning/kv-namespaces/ /kv/concepts/kv-namespaces/ 301
+/kv/reference/how-kv-works/ /kv/concepts/how-kv-works/ 301
+/kv/reference/kv-bindings/ /kv/concepts/kv-bindings/ 301
+/kv/reference/kv-namespaces/ /kv/concepts/kv-namespaces/ 301
 /kv/tutorials/workers-kv-from-rust/ /workers/tutorials/workers-kv-from-rust/ 301
 
 # vectorize

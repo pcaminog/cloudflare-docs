@@ -6,7 +6,7 @@ weight: 7
 
 # Write key-value pairs
 
-To create a new key-value pair, or to update the value for a particular key, call the `put()` method on any KV namespace you have bound to your Worker code. 
+To create a new key-value pair, or to update the value for a particular key, call the `put()` method on any KV namespace you have bound to your Worker code.
 
 The basic form of the method  `put()` looks like this:
 
@@ -33,17 +33,17 @@ The maximum size of a value is 25 MiB.
 
 You can also [write key-value pairs from the command line with Wrangler](/kv/reference/kv-commands/#create) and [write data via the API](/api/operations/workers-kv-namespace-write-key-value-pair-with-metadata).
 
-{{<Aside type="note">}} 
-Due to the eventually consistent nature of KV, concurrent writes can end up overwriting one another. It is a common pattern to write data from a single process via Wrangler or the API. This avoids competing concurrent writes because of the single stream. All data is still readily available within all Workers bound to the namespace. 
+{{<Aside type="note">}}
+Due to the eventually consistent nature of KV, concurrent writes can end up overwriting one another. It is a common pattern to write data from a single process via Wrangler or the API. This avoids competing concurrent writes because of the single stream. All data is still readily available within all Workers bound to the namespace.
 
-Writes are immediately visible to other requests in the same global network location, but can take up to 60 seconds to be visible in other parts of the world. 
+Writes are immediately visible to other requests in the same global network location, but can take up to 60 seconds to be visible in other parts of the world.
 
-Refer to [How KV works](/kv/reference/how-kv-works/) for more information on this topic.
+Refer to [How KV works](/kv/concepts/how-kv-works/ ) for more information on this topic.
 {{</Aside>}}
 
 ## Write data in bulk
 
-Write more than one key-value pair at a time with Wrangler or [via the API](/api/operations/workers-kv-namespace-write-multiple-key-value-pairs). 
+Write more than one key-value pair at a time with Wrangler or [via the API](/api/operations/workers-kv-namespace-write-multiple-key-value-pairs).
 
 The bulk API can accept up to 10,000 KV pairs at once.
 
@@ -55,7 +55,7 @@ KV offers the ability to create keys that automatically expire. You may configur
 
 {{<Aside type="note">}}
 
-An `expiration` setting on a key will result in that key being deleted, even in cases where the `cacheTtl` is set to a higher (longer duration) value. Expiration always takes precedence.  
+An `expiration` setting on a key will result in that key being deleted, even in cases where the `cacheTtl` is set to a higher (longer duration) value. Expiration always takes precedence.
 
 {{</Aside>}}
 
@@ -73,9 +73,9 @@ As of January 2022, expiration targets that are less than 60 seconds into the fu
 
 ### Create expiring keys
 
-The `put()` method has an optional third parameter. 
+The `put()` method has an optional third parameter.
 
-The `put()` method accepts an object with optional fields that allow you to customize the behavior of the `put()` method. You can set `expiration` or `expirationTtl`, depending on how you want to specify the key’s expiration time. 
+The `put()` method accepts an object with optional fields that allow you to customize the behavior of the `put()` method. You can set `expiration` or `expirationTtl`, depending on how you want to specify the key’s expiration time.
 
 To use `expiration` or `expirationTtl`, run one of the two commands below to set an expiration when writing a key from within a Worker:
 
@@ -89,11 +89,11 @@ To use `expiration` or `expirationTtl`, run one of the two commands below to set
 
 These assume that `secondsSinceEpoch` and `secondsFromNow` are variables defined elsewhere in your Worker code.
 
-You can also [write with an expiration on the command line via Wrangler](/kv/reference/kv-namespaces/) or [via the API](/api/operations/workers-kv-namespace-write-key-value-pair-with-metadata).
+You can also [write with an expiration on the command line via Wrangler](/kv/concepts/kv-namespaces/) or [via the API](/api/operations/workers-kv-namespace-write-key-value-pair-with-metadata).
 
 ## Metadata
 
-To associate some {{<glossary-tooltip term_id="metadata">}}metadata{{</glossary-tooltip>}} with a key-value pair, set `metadata` to any arbitrary object (must serialize to JSON) in the `put()` options object on a `put()` call. 
+To associate some {{<glossary-tooltip term_id="metadata">}}metadata{{</glossary-tooltip>}} with a key-value pair, set `metadata` to any arbitrary object (must serialize to JSON) in the `put()` options object on a `put()` call.
 
 To do this in your Worker script:
 
