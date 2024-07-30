@@ -4,6 +4,7 @@ pcx_content_type: reference-architecture-diagram
 weight: 1
 meta:
   title: "Reference Architecture Diagram: Serverless global APIs"
+products: [Workers, KV, D1, Hyperdrive]
 ---
 
 # Serverless global APIs
@@ -43,5 +44,6 @@ This is an example architecture of a serverless API on Cloudflare and aims to il
 ## Related resources
 
 - [Workers: Get started](/workers/get-started/)
-- [Queues: Get started](/queues/get-started/)
-- [R2: Get started](/r2/get-started/)
+- [D1: Get started](/d1/get-started/)
+- [KV: Get started](/r2/get-started/)
+- [Hyperdrive: Get started](/hyperdrive/get-started/)
