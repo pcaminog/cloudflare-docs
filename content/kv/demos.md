@@ -18,7 +18,4 @@ Explore the following {{<glossary-tooltip term_id="demo application">}}demo appl
 
 Explore the following {{<glossary-tooltip term_id="reference architecture">}}reference architectures{{</glossary-tooltip>}} that use KV:
 
-* [A/B-testing using Workers](/reference-architecture/diagrams/serverless/a-b-testing-using-workers/): Use KV to build an A/B testing architecture, where KV is used to store the routing information to the proper origin service based on the incoming request.
-* [Fullstack web applications](/reference-architecture/diagrams/serverless/fullstack-application/): Use KV within your fullstack web applications as a data store for read-heavy workloads.
-* [Serverless global APIs](/reference-architecture/diagrams/serverless/serverless-global-apis/): Use KV within your global serverless APIs as a data store for read-heavy workloads.
-* [Serverless image content management platform](/reference-architecture/diagrams/serverless/serverless-image-content-management/): Use KV within your serverless image content management system to store image metadata.
+{{<resource-by-selector products="KV" resource_type="reference-architecture,design-guide,reference-architecture-diagram">}}
